@@ -135,15 +135,28 @@
 %-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
+    
+    
+     \resumeSubheading
+      {Digital IP Verification Intern}{May 2023 -- Sep. 2023}
+      {NXP Semiconductors Canada}{Kanata, ON}
+      \resumeItemListStart
+        \resumeItem {\textbf{UVM SystemVerilog:} Designed testbench stimulus environment for an IP Block in Dataplane processing.}
+        \resumeItem {\textbf{Test Planning:} Created Simulation scenarios for testing IP block features and edgecases. } 
+        \resumeItem {\textbf{Simulation:} Worked on Simulation Environment programming to reach total {functional coverage}.} 
+        \resumeItem {\textbf{Workflows:} Set up documentation and tested {Git} for Secure Linux Development Environment.}
+      \resumeItemListEnd
+    
+    %-------break-----------------
     \resumeSubheading
       {Software Engineering Intern}{Sept. 2022 -- Dec. 2022}
       {Synapse Product Development}{Seattle, WA}
       \resumeItemListStart
-        \resumeItem {Leveraged \textbf{Zephyr RTOS} to create an \textbf{NRF52 BLE Prototype.}}
-        \resumeItem {Developed \textbf{Python APIs} for lab testing equipment\textbf{(Agilent, Keysight, NI, Tektronik)}}
-        \resumeItem {\textbf{Automated} various testing and in house procedures using \textbf{Python and bash scripts.}} 
-        \resumeItem {\textbf{Designed} Docker containers for Gitlab pipelines to complete test and build jobs.}
-        \resumeItem {Designed and implemented \textbf{drivers} for the controls of PCB testing Device\textbf{( I2C, UART )}}
+        \resumeItem {\textbf{Prototyping:} Leveraged {Zephyr RTOS} to create a proof of concept on \textit{NRF52 BLE} device.}
+        \resumeItem {\textbf{Python APIs:} Developed company specific lab automation software for equipment from \textit{Agilent, Keysight, NI, Tektronik.}}
+        \resumeItem {\textbf{Automation:} Streamlined testing and in house procedures using \textit{Python} and \textit{Bash.}} 
+        \resumeItem {\textbf{Containerization:} Docker containers for Gitlab pipelines to complete test and build jobs.}
+        \resumeItem {\textbf{Driver Development:}Designed and implemented \textit{drivers} for the controls of PCB testing Device\textit{( I2C, UART )}}
       \resumeItemListEnd
      
 % -----------Multiple Positions Heading-----------
@@ -160,20 +173,20 @@
       {Firmware developer}{Jan. 2022 -- April 2022}
       {Ford motor Company of Canada}{Remote}
       \resumeItemListStart
-       \resumeItem {Improved \textbf{Jenkins CI/CD} pipelines to achieve \textbf{unit testing automation} using \textbf{Python} for Linux server.}
-        \resumeItem {Lead developer for \textbf{Unity/Cmock Test framework} optimization for unit testing, achieving up to \textbf{30\% faster} runtime while using \textbf{50\%} fewer test cases.}
-        \resumeItem {Tested logging and interrupt algorithms and debugged on hardware test benches.}
-        \resumeItem {Debugged Embedded C code for \textbf{MISRA and ISO26262} compliances using \textbf{Polyspace} .}
-        \resumeItem {Implemented \textbf{AUTOSAR} standard Embedded hardware and \textbf{safety design} using Davinci Configurator.}
+      \resumeItem {\textbf{Unity/Cmock Test framework}: Lead developer for optimization for unit testing, achieving up to \textit{30\% faster} runtime while using \textit{50\%} less manually written test cases.} 
+       \resumeItem {\textbf{Automation:} Improved \textit{Jenkins CI/CD} pipelines to support unit testing automatino using \textit{Python} for Linux server.}
+        \resumeItem {\textbf{Embedded Trace Debugging:} Tested logging and interrupt algorithms and debugged on hardware test benches through CAN and Serial.}
+        % \resumeItem {\textbf{Embedded Debugging:} code for \textit{MISRA and ISO26262} compliances using \textit{Polyspace}.}
+        \resumeItem {{Automotive Design}Implemented \textit{AUTOSAR} standard Embedded hardware with \textit{ISO26262 safety design} using \textit{Davinci Configurator}.}
     \resumeItemListEnd
 
     \resumeSubheading
       {Firmware Team Member }{Sept. 2021 -- Present}
       {UW Midnight Sun Solar Rayce Car Team}{Waterloo, ON}
       \resumeItemListStart
-        \resumeItem {Handled Task queueing, scheduling, and priorities using \textbf{FreeRTOS} for embedded systems training. }
-        \resumeItem {Programmed \textbf{smoketesting firmware} in C for \textbf{STM32} processors in Linux virtual machine using Vagrant \textbf{Virtual Box}. }
-        \resumeItem {Implemented \textbf{CAN API autogeneration} using \textbf{Python and Jinja2.}}
+        \resumeItem {\textbf{functional Macro:} Helped in abstracting RTOS functionalities through macros for ease of use in embedded programming.}
+        \resumeItem {\textbf{Testing:} Programmed {smoketesting firmware} in C for \textbf{STM32} processors in Linux virtual machine using Vagrant \textbf{Virtual Box}. }
+        \resumeItem {\textbf{CAN API autogeneration:} Implemented C file autogeneration using input yaml files through {Python and Jinja2.}}
       \resumeItemListEnd
     \resumeSubHeadingListEnd
 
@@ -183,7 +196,7 @@
 \section{Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-      {\textbf{Game Of Life} $|$ \emph{C++, Python, OpenGL API, MAC Metal API }}{}
+      {\textbf{Game Of Life} $|$ \emph{C++, Python, OpenGL }}{}
           \resumeItemListStart
             \resumeItem {Implemented all stages of the \textbf{Graphics pipeline} to achieve \textbf{2+ million polygons} rendering efficiently via triangles.}
             \resumeItem {Abstracted complex Graphics API code into simpler \textbf{game engine API} classes(Shaders, Vertex, Renderer, etc) for more practical \textbf{development and debugging.}}
