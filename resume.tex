@@ -139,14 +139,24 @@
 \section{Experience}
   \resumeSubHeadingListStart
     \resumeSubheading
+      {Digital IP Verification Intern}{May 2023 -- Sep. 2023}
+      {NXP Semiconductors Canada}{Kanata, ON}
+      \resumeItemListStart
+        \resumeItem {\textbf{UVM SystemVerilog}: Designed testbench stimulus environment for an IP Block in Dataplane processing.}
+        \resumeItem {\textbf{Test Planning}: Created Simulation scenarios for testing IP block features and edgecases. } 
+        \resumeItem {\textbf{Simulation}: Worked on Simulation Environment programming to reach total {functional coverage}.} 
+        % \resumeItem {\textbf{Workflows}: Set up documentation and tested {Git} for Secure Linux Development Environment.}
+      \resumeItemListEnd
+
+    \resumeSubheading
       {Software Engineering Intern}{Sept. 2022 -- Dec. 2022}
       {Synapse Product Development}{Seattle, WA}
       \resumeItemListStart
-        \resumeItem {Leveraged \textbf{Zephyr RTOS} to create an \textbf{NRF52 BLE Prototype.}}
-        \resumeItem {Developed \textbf{Python APIs} for lab testing equipment\textbf{(Agilent, Keysight, NI, Tektronik)} }
-        \resumeItem {\textbf{Automated} various testing and in house procedures using \textbf{Python and bash scripts.}} 
-        \resumeItem {Designed Docker containers for \textbf{Gitlab pipelines} to complete test and build jobs.}
-  %  \resumeItem {Designed and implemented \textbf{drivers} for the controls of PCB testing Device\textbf{( I2C, UART )}}
+         \resumeItem {\textbf{Prototyping}: Leveraged {Zephyr RTOS} to create a proof of concept on \textit{NRF52 BLE} device.}
+        \resumeItem {\textbf{Python APIs}: Developed company specific lab automation software for equipment from \textit{Agilent, Keysight, NI, Tektronik.}}
+        \resumeItem {\textbf{Automation}: Streamlined testing and in house procedures using \textit{Python} and \textit{Bash.}} 
+        \resumeItem {\textbf{Containerization}: Docker containers for Gitlab pipelines to complete test and build jobs.}
+        % \resumeItem {\textbf{Driver Development}:Designed and implemented \textit{drivers} for the controls of PCB testing Device\textit{( I2C, UART )}}
       \resumeItemListEnd
      
 % -----------Multiple Positions Heading-----------
@@ -155,40 +165,48 @@
       {Firmware Developer}{Jan. 2022 -- April 2022}
       {Ford Motor Company of Canada}{Remote}
       \resumeItemListStart
-       \resumeItem {Improved \textbf{Jenkins CI/CD} pipelines to achieve \textbf{unit testing automation} using \textbf{Python} for Linux server.}
-        \resumeItem {Lead developer for \textbf{Unity/Cmock Test framework} optimization for unit testing, achieving up to \textbf{30\% faster} runtime while using \textbf{50\%} fewer test cases.}
-        \resumeItem {Tested logging and interrupt algorithms and debugged on hardware test benches.}
-        \resumeItem {Debugged Embedded C code for MISRA compliances using \textbf{Polyspace}.}
-     %   \resumeItem {Implemented \textbf{AUTOSAR} standard Embedded hardware and \textbf{safety design} using Davinci Configurator.}
-    \resumeItemListEnd
+        \resumeItem {\textbf{Unity/Cmock Test framework}: Lead developer for optimization for unit testing, achieving up to \textit{30\% faster} runtime while using \textit{50\%} less manually written test cases.} 
+        \resumeItem {\textbf{Automation}: Improved \textit{Jenkins CI/CD} pipelines to support unit testing automatino using \textit{Python} for Linux server.}
+        \resumeItem {\textbf{Embedded Trace Debugging}: Tested logging and interrupt algorithms and debugged on hardware test benches through CAN and Serial.}
+        \resumeItem {\textbf{Embedded Debugging}: Debugging code for \textit{MISRA and ISO26262} compliances using \textit{Polyspace Static Analysis}.}
+        % \resumeItem {\textbf{Automotive Design}: Maintained \textit{AUTOSAR} standard design with \textit{ISO26262 safety design} using \textit{Davinci Configurator}.}
+      \resumeItemListEnd
     \resumeSubHeadingListEnd
 
 
 %-----------PROJECTS-----------
 \section{Projects}
     \resumeSubHeadingListStart
+      % \resumeProjectHeading
+      % {\textbf{Blog} $|$ \emph{Django, NextJS, Google Analytics, Github Actions}}{}
+      %         \resumeItemListStart
+      %         \resumeItem{Designed using the Django web framework to create a \textbf{RESTful API} for manage requests and database models}.
+      %         \resumeItem{Set up \textbf{Google Analytics} feedback on the website to provide real-time rich data on usage}
+      %         \resumeItem{Configured \textbf{CI/CD pipelines} on Github Actions to automate building and deployment to hosting service}
+      %         \resumeItem{Integrated \textbf{Disqus} Static Page Comment Section to \textbf{limit data retrievals} from server for optimal page load times.}
+      %         \resumeItemListEnd
       \resumeProjectHeading
-      {\textbf{Blog} $|$ \emph{Django, NextJS, Google Analytics, Github Actions}}{}
-              \resumeItemListStart
-              \resumeItem{Designed using the Django web framework to create a \textbf{RESTful API} for manage requests and database models}.
-              \resumeItem{Set up \textbf{Google Analytics} feedback on the website to provide real-time rich data on usage}
-              \resumeItem{Configured \textbf{CI/CD pipelines} on Github Actions to automate building and deployment to hosting service}
-              \resumeItem{Integrated \textbf{Disqus} Static Page Comment Section to \textbf{limit data retrievals} from server for optimal page load times.}
-              \resumeItemListEnd
+      {\textbf{CubeSolver} $|$ \emph{C++, Unix, NCurses}}{}
+        \resumeItemListStart
+        \resumeItem{A Program that can solve \textbf{any Rubix Cube} you scramble. Optimized for bitwise operations.}
+        \resumeItem{Designed Unix \textbf{Terminal User Interface(TUI)} using NCurses to visualize Cube}
+      \resumeItemListEnd
       \resumeProjectHeading
         {\textbf{SEER} $|$ \emph{Javascript, ElectronJS, NodeJS, HTML/CSS}}{}
           \resumeItemListStart
-          \resumeItem {Utilized the \textbf{Yahoo Finance API} JS library to apply a moving average trading strategy for stocks}
+          \resumeItem {Utilized the \textbf{Yahoo Finance API} JS library and created stock analysis app}
+          % \resumeItem {Utilized the \textbf{Yahoo Finance API} JS library to apply a moving average trading strategy for stocks}
           \resumeItem{Leveraged ElectronJS to create a seamless \textbf{Cross-Platform App} running on Chromium}
-          \resumeItem{Developed a Bot automated trading service by connecting to \textbf{TradingView API}}
+          % \resumeItem{Developed a Bot automated trading service by connecting to \textbf{TradingView API}}
           \resumeItemListEnd
          
       \resumeProjectHeading
-         {\textbf{Game Of Life} $|$ \emph{C++, Python, OpenGL API, Git}}{}
+         {\textbf{Game Of Life} $|$ \emph{C++, Python, OpenGL}}{}
           \resumeItemListStart
-            \resumeItem {Implemented all stages of the \textbf{Graphics pipeline} to achieve \textbf{2+ million polygons} rendering efficiently via triangles.}
-            \resumeItem {Abstracted complex Graphics API code into simpler \textbf{game engine API} classes(Shaders, Vertex, Renderer, etc) for more practical \textbf{development and debugging.}}
-            \resumeItem {Designed my own testing assert macros to debug Graphics errors in \textbf{VS Studio/Xcode Debugger}}
+            \resumeItem{ Cellular Automata simulation visualized using \textbf{2D OpenGL} Rendering. Created entire Visual Engine and \textbf{graphics pipeline}.}
+            % \resumeItem {Implemented all stages of the \textbf{Graphics pipeline} to achieve \textbf{2+ million polygons} rendering efficiently via triangles.}
+            \resumeItem {Coded in \textbf{OOP} with abstracted complex Graphics API code into simpler {game engine API} classes(Shaders, Vertex, Renderer, etc)}
+            % \resumeItem {Designed my own testing assert macros to debug Graphics errors in \textbf{VS Studio/Xcode Debugger}}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 
@@ -197,8 +215,8 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Python, C/C++, SQL, JavaScript, HTML/CSS, Perl, shell scripting} \\
-     \textbf{Frameworks}{:Node.js, JQuery, Django, Flask, OpenCV, Numpy, SSG tools(Jekyll, Hugo)} \\
+     \textbf{Languages}{: Python, C/C++, SQL, JavaScript, HTML/CSS, Bash and shell scripting} \\
+     \textbf{Frameworks}{: Node.js, JQuery, Django, Flask, OpenCV, Numpy, SSG tools(Jekyll, Hugo)} \\
      \textbf{Developer Tools}{: Git, Ansible, OpenSSL, Docker/K8s, Jenkins, SonarQube, Github Actions, VS Code} \\
       \textbf{Libraries}{: pandas, NumPy, Matplotlib, pyTorch, TensorFlow}
     }}
