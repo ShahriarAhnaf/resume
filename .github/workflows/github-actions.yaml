@@ -31,7 +31,7 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - name: Setup POppler Linux
         run: | 
-          apt-get install poppler-utils
+          sudo apt-get install poppler-utils
       - name: Install Python requirements
         run: |
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
