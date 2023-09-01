@@ -18,7 +18,7 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v3
         with:
-          fetch-depth: 0
+          fetch-depth: 0 #gpt added this to be smort
 
       - name: Show repository information
         run: |
@@ -39,6 +39,8 @@ jobs:
       - name: Run Python script
         run: |
           python pdf_to_png.py
+      - name: Add generated file automagically
+        run : | 
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add .
