@@ -125,10 +125,10 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {University of Waterloo}{Waterloo, ON}
-      {Bachelor of Applied Science in Computer Engineering}{Sept. 2021 -- May 2026}
+      {Bachelor of Applied Science in Computer Engineering}{Sept. 2021 -- Apr. 2026}
     \resumeItemListStart
       \resumeItem{Recipient of Richard \& Elizabeth Madter Entrance Scholarship and President’s Scholarship of Distinction }
-      \resumeItem{\textbf{Relevant Courses}: Algorithms and Data Structures II, Systems Programming and Concurrency, Embedded Microprocessing Systems}
+      \resumeItem{\textbf{Relevant Courses}: Algorithms and Data Structures II,  Computer Networks, , Systems Programming and Concurrency, Compilers}
 
     \resumeItemListEnd
   \resumeSubHeadingListEnd
@@ -138,14 +138,23 @@
 \section{Experience}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {IC Design Verification Intern}{May 2023 -- Aug. 2023}
-      {NXP Semiconductors Canada}{Kanata, ON}
-      \resumeItemListStart
-      \resumeItem {\textbf{UVM SystemVerilog}: Designed a Multi-threaded IP specific \emph{UVM Sequence} for testing RTL Design.} 
-      \resumeItem {\textbf{Test Planning}: Created Simulation scenarios for testing IP block features in \emph{Dataplane processing}.} 
-      \resumeItem {\textbf{Workflows}: Spearheaded migration to \emph{Git} and designed \emph{Bash scripts} distributed regression jobs in \emph{Red Hat Linux}.} 
-       % \resumeItem {\textbf{Workflows}: Set up documentation and tested {Git} for Secure Linux Development Environment.}
-      \resumeItemListEnd
+    {IC Design and Verification Intern}{May 2023 -- Aug. 2023, Jan. 2024 -- May 2024}
+    {NXP Semiconductors Canada}{Kanata, ON}
+    \resumeItemListStart
+    \resumeItem {\textbf{IP Design}: Designed multiple IP blocks NXP's flagship dataplane processing chips.} 
+    \resumeItem {\textbf{Timing Analysis}: Spearheaded critical path improvements in IP block to increase speed by 50\%.} 
+    \resumeItem {\textbf{Functional Testing}: Designed brand new End-to-End functional tests in simulating traffic for IP.}
+  %   \resumeItemListEnd
+  % \resumeSubheading
+  %   {IC Verification Intern}{}
+  %   {NXP Semiconductors Canada}{Kanata, ON}
+    % \resumeItemListStart
+    % \resumeItem {\textbf{UVM SystemVerilog}: Designed Multi-threaded IP specific \emph{UVM classes} for testing RTL Design.} 
+    \resumeItem {\textbf{Unit Test Planning}: Created Simulation scenarios for testing High speed Dataplane Processing features.} 
+    % \resumeItem {\textbf{Debugging}: Debugging regression testing and development in \emph{Red Hat Linux}.} 
+    % \resumeItem {\textbf{Workflows}: Set up documentation and tested {Git} for Secure Linux Development Environment.}
+    \resumeItemListEnd
+
 
     \resumeSubheading
       {Software Engineering Intern}{Sept. 2022 -- Dec. 2022}
@@ -164,10 +173,10 @@
       {Firmware Developer}{Jan. 2022 -- April 2022}
       {Ford Motor Company of Canada}{Remote}
       \resumeItemListStart
-        \resumeItem {\textbf{Unity/Cmock Test framework}: Lead developer for optimization for unit testing, achieving up to {30\% faster} runtime while using {50\%} less manually written test cases.} 
+        \resumeItem {\textbf{Unity/Cmock Test framework}: Lead developer of optimization for unit testing, achieving up to {30\% faster} runtime while using {50\%} less manually written test cases.} 
         \resumeItem {\textbf{Automation}: Improved \textit{Jenkins} CI/CD pipelines to support unit testing automatino using {Python} for Linux server.}
-        \resumeItem {\textbf{Embedded Trace Debugging}: Tested logging and interrupt algorithms and debugged on hardware test benches through CAN and Serial.}
-        \resumeItem {\textbf{Embedded Debugging}: Debugging code for \textit{MISRA} and \emph{ISO26262} compliances using Static Analysis tools.}
+        \resumeItem {\textbf{Embedded Trace Debugging}: Tested logging and interrupt algorithms and debugged on hardware test benches through CAN and Serial. Used Static Analysis tools such as Sonarqube.}
+        % \resumeItem {\textbf{Embedded Debugging}: Debugging code for \textit{MISRA} and \emph{ISO26262} compliances using }
         % \resumeItem {\textbf{Automotive Design}: Maintained \textit{AUTOSAR} standard design with \textit{ISO26262 safety design} using \textit{Davinci Configurator}.}
       \resumeItemListEnd
     \resumeSubHeadingListEnd
@@ -184,28 +193,55 @@
       %         \resumeItem{Configured \textbf{CI/CD pipelines} on Github Actions to automate building and deployment to hosting service}
       %         \resumeItem{Integrated \textbf{Disqus} Static Page Comment Section to \textbf{limit data retrievals} from server for optimal page load times.}
       %         \resumeItemListEnd
+      % \resumeProjectHeading
+      %  {\textbf{SafePi} $|$ \emph{tensorFlowLite, OpenCV}} {}
+      %  \resumeItemListStart
+      %    \resumeItem{A Speech and facial recognition security device using \emph{tinyML}. Capable of \emph{On Device Learning}. }{}
+      %  \resumeItemListEnd
+      % \resumeProjectHeading
+      % {\textbf{CubeSolver} $|$ \emph{C++, Linux, NCurses}}{}
+      %   \resumeItemListStart
+      %   \resumeItem{A Program that can solve \textbf{any Rubix Cube} you scramble. Optimized for bitwise operations.}
+      %   \resumeItem{Designed Unix \textbf{Terminal User Interface(TUI)} using NCurses to visualize Cube}
+      % \resumeItemListEnd
+      % \resumeProjectHeading
+      % {\textbf{Real Time Executable} $|$ \emph{C, OS}}{}
+      % \resumeItemListStart
+      %   \resumeItem{ A RTOS in STM32 capable of Pre-emptive task handling}
+      %   \resumeItem{ Implements binary Buddy system Malloc that has been optimized to match system malloc.}
+      % \resumeItemListEnd
+
       \resumeProjectHeading
-      {\textbf{CubeSolver} $|$ \emph{C++, Unix, NCurses}}{}
-        \resumeItemListStart
-        \resumeItem{A Program that can solve \textbf{any Rubix Cube} you scramble. Optimized for bitwise operations.}
-        \resumeItem{Designed Unix \textbf{Terminal User Interface(TUI)} using NCurses to visualize Cube}
+      {\textbf{FindPng} $|$ \emph{C}}{}
+      \resumeItemListStart
+        \resumeItem{ A \textbf{multithreaded} webscraper built with pthread library utilizing mutual exclusion primitives from Linux.}
+        \resumeItem{ Analyzes webpage contents using \textbf{Breadth First Search} for sublinks found in pages with duplicate analysis.}
+        \resumeItem{ Implements \textbf{Producer-Consumer} design to paralelly analyze file metadata to identify format.}
       \resumeItemListEnd
+
       \resumeProjectHeading
         {\textbf{SEER} $|$ \emph{Javascript, ElectronJS, NodeJS, HTML/CSS}}{}
           \resumeItemListStart
           \resumeItem {Utilized the \textbf{Yahoo Finance API} JS library and created stock analysis app}
           % \resumeItem {Utilized the \textbf{Yahoo Finance API} JS library to apply a moving average trading strategy for stocks}
           \resumeItem{Leveraged ElectronJS to create a seamless \textbf{Cross-Platform App} running on Chromium}
-          % \resumeItem{Developed a Bot automated trading service by connecting to \textbf{TradingView API}}
+          \resumeItem{Developed a Bot automated trading service by connecting to \textbf{TradingView API}}
           \resumeItemListEnd
-         
+      
+      % \resumeProjectHeading
+      %    {\textbf{Game Of Life} $|$ \emph{C++, Python, OpenGL}}{}
+      %     \resumeItemListStart
+      %       \resumeItem{ Cellular Automata simulation visualized using \textbf{2D OpenGL} Rendering. Created entire Visual Engine and \textbf{graphics pipeline}.}
+      %       % \resumeItem {Implemented all stages of the \textbf{Graphics pipeline} to achieve \textbf{2+ million polygons} rendering efficiently via triangles.}
+      %       \resumeItem {Coded in \textbf{OOP} with abstracted complex Graphics API code into simpler {game engine API} classes(Shaders, Vertex, Renderer, etc)}
+      %       % \resumeItem {Designed my own testing assert macros to debug Graphics errors in \textbf{VS Studio/Xcode Debugger}}
+      %     \resumeItemListEnd
       \resumeProjectHeading
-         {\textbf{Game Of Life} $|$ \emph{C++, Python, OpenGL}}{}
+          {\textbf{Home Server} $|$ \emph{Rust, Linux, Raspberry pi}}{}
           \resumeItemListStart
-            \resumeItem{ Cellular Automata simulation visualized using \textbf{2D OpenGL} Rendering. Created entire Visual Engine and \textbf{graphics pipeline}.}
-            % \resumeItem {Implemented all stages of the \textbf{Graphics pipeline} to achieve \textbf{2+ million polygons} rendering efficiently via triangles.}
-            \resumeItem {Coded in \textbf{OOP} with abstracted complex Graphics API code into simpler {game engine API} classes(Shaders, Vertex, Renderer, etc)}
-            % \resumeItem {Designed my own testing assert macros to debug Graphics errors in \textbf{VS Studio/Xcode Debugger}}
+            \resumeItem{ A light multi-threaded webserver using \textbf{Sockets} made on Pi 4 for file serving and website hosting.}
+            \resumeItem{ Implements \textbf{Cloudflare Tunneling} for gloval internet encryption and protection}
+            \resumeItem{ Designed Secure Login for Remote development environment in Linux.}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 %
@@ -213,10 +249,10 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Python, C/C++, SQL, JavaScript, HTML/CSS, Bash and shell scripting, ASM} \\
-     \textbf{Frameworks}{: Node.js, JQuery, Django, Flask, OpenCV, Numpy, SSG tools(Jekyll, Hugo)} \\
-     \textbf{Developer Tools}{: Git, Ansible, OpenSSL, Docker/K8s, Jenkins, SonarQube, Github Actions, VS Code} \\
-      \textbf{Libraries}{: pandas, NumPy, Matplotlib, pyTorch, TensorFlow}
+     \textbf{Languages}{: C/C++, Python, Rust, Java, Javascript, SQL, Bash and shell scripting, ASM, Matlab} \\
+     \textbf{Frameworks}{: LLVM, OpenGL, ROCm, Node Js,  ElectronJS} \\
+    %  \textbf{Developer Tools}{: Unreal Engine 4, Matlab,} \\
+      \textbf{Libraries}{: pandas, NumPy, Matplotlib, pyTorch}
     }}
  \end{itemize}
 
