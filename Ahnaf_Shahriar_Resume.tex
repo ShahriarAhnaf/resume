@@ -2,7 +2,7 @@
 % Resume in Latex
 % Author : Jake Gutierrez
 % Based off of: https://github.com/sb2nov/resume
-% License : MIT
+%  License : MIT
 %------------------------
 
 \documentclass[letterpaper,11pt]{article}
@@ -128,7 +128,7 @@
     \resumeItemListStart
       \resumeItem{\textbf{GPA}: 3.7}
       % \resumeItem{Recipient of Richard \& Elizabeth Madter Entrance Scholarship and President’s Scholarship of Distinction }
-      \resumeItem{\textbf{Relevant Courses}: Computer Architecture, Distributed Computing, ML for Chip Design, Robot Dynamics & Control, Compilers, Numerical Methods, Real-Time Operating Systems}
+      \resumeItem{\textbf{Relevant Courses}: Computer Architecture, Distributed Computing, ML for Chip Design, Robot Dynamics \& Control, Compilers, Real-Time Operating Systems}
       % \resumeItem{\textbf{Clubs}: Midnight Sun Solar Racing Team}  
     \resumeItemListEnd
   \resumeSubHeadingListEnd
@@ -137,7 +137,21 @@
 %-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
-
+% \resumeSubheading
+%   {Undergraduate Research Assistant}{May. 2025 -- Present}
+%   {University of Waterloo}{Waterloo, ON}
+%   \resumeItemListStart
+%     \resumeItem{\textbf{Research}: Conducting Case study on Static Analysis type checking for Java.}
+%     \resumeItem{\textbf{Optimization}: Implementing bytecode storage on NUllness checker for EISOP framework.}
+%   \resumeItemListEnd
+  
+  \resumeSubheading
+  {Undergraduate Research Assistant}{May. 2025 -- Present}
+  {Wireless Sensors and Devices Lab}{Waterloo, ON}
+  \resumeItemListStart
+     \resumeItem{\textbf{BLE development}: Designing and firmware for \textit{Extended Advertisement} for ultra low power mesh networks}
+     \resumeItem{\textbf{Wireless Gateway}: Implementing 5G provisioning for gateway devices with Satellite connectivity. }
+  \resumeItemListEnd
   \resumeSubheading
   {Wireless Firmware Developer}{Jan. 2025 -- Apr. 2025}
   {ON Semiconductor Corporation}{Waterloo, ON}
@@ -145,8 +159,8 @@
     %  \resumeItem{\textbf{Firmware & Security}: Engineered secure wireless firmware and OTA bootloader, achieving a 10\% speedup in bootloader and firmware updates per device.}
      \resumeItem{\textbf{SDK Development}: Integrated \emph{I3C} drivers and \emph{Bluetooth Low Energy} profile services into sample code.}
      \resumeItem{\textbf{Wireless Connectivity}: Developed and integrated cutting-edge \emph{LE Audio, HFP, and A2DP} functionality into an all-in-one Application.}
-     \resumeItem{\textbf{Wireless Manager} Designed a modular state machine to manage Bluetooth power states, improving power efficiency by \emph{25\%}}
-     \resumeItem{\textbf{Test Automation}: Automated SDK test cases, reducing manual testing efforts by up to \emph{80\%}}
+     \resumeItem{\textbf{Wireless Manager} Designed a modular state machine for bluetooth, improving power efficiency by \emph{25\%}}
+     \resumeItem{\textbf{Test Automation}: Automated SDK release test cases, reducing testing time by up to \emph{80\%} for samples}
   \resumeItemListEnd
 
   \resumeSubheading
@@ -154,7 +168,7 @@
   {NXP Semiconductors Canada}{Kanata, ON}
   \resumeItemListStart
   \resumeItem{\textbf{IP Design}: Designed multiple IP blocks including \textit{proprietery ECC IP} for dataplane processing chips.} 
-  \resumeItem{\textbf{Timing Analysis}: Utilized \emph{Synopsys Design Compiler} to analyze timing and increase IP Clock Freq. by \emph{50\%}.} 
+  \resumeItem{\textbf{Timing Analysis}: Utilized \emph{Synopsys Design Compiler} and improved Parsing IP Clock Frequency by \emph{20\%}.} 
   \resumeItem{\textbf{Functional Testing}: Designed SystemVerilog End-to-End functional tests in simulating \emph{10GBps+} traffic for IP.}
 %   \resumeItemListEnd
 % \resumeSubheading
@@ -195,7 +209,7 @@
        \resumeItem{\textbf{Automation}: Improved \textit{Jenkins CI/CD} pipelines to support unit testing automation using \textit{Python}}
         \resumeItem{\textbf{Embedded Trace Debugging}: Built high speed Parsing tools to parse through CAN and Serial messages exceeding \textit{10 million+} lines.}
         % \resumeItem{\textbf{Embedded Debugging}: code for \textit{MISRA and ISO26262} compliances using \textit{Polyspace}.}
-        \resumeItem{\textbf{Automotive Design}: Maintained \textit{AUTOSAR} standard design with \textit{ISO26262 safety design} using \textit{Davinci Configurator}.}
+        % \resumeItem{\textbf{Automotive Design}: Maintained \textit{AUTOSAR} standard design with \textit{ISO26262 safety design} using \textit{Davinci Configurator}.}
     \resumeItemListEnd
 
     % \resumeSubheading
@@ -258,7 +272,7 @@
      \textbf{Languages}{: C/C++, Java, Python, Tcl, Bash scripting, ASM, VHDL, SystemVerilog/Verilog} \\
      \textbf{Tools}{: Keil, Quartus, Git, Linux, Qemu, LLDB/GDB , Docker, WireShark, UVM, Matlab} \\
      \textbf{Hardware}{: Oscilloscopes, Logic Analyzer, Multimeters, Spectrum Analyzer} \\
-     \textbf{Protocols}:{ TCP/IP, JTAG, Serial, Ethernet, CAN/CAN-FD, LIN}
+     \textbf{Protocols}:{ TCP/IP, JTAG, Serial, Ethernet, CAN/CAN-FD, LIN, AXI}
     }}
  \end{itemize}
 
