@@ -38,6 +38,7 @@
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
+\setlength{\footskip}{12pt}
 
 % Adjust margins
 \addtolength{\oddsidemargin}{-0.5in}
@@ -67,25 +68,26 @@
     {#1 \vspace{-2pt}}
   }
 }
-
+% edit formatting for resume headers
 \newcommand{\resumeSubheading}[4]{
   \vspace{-1pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
+  \begin{tabular*}{0.95\textwidth}[t]{>{\raggedright\arraybackslash}p{0.72\textwidth}@{\extracolsep{\fill}}>{\raggedleft\arraybackslash}p{0.23\textwidth}}
+      	\textbf{#1} & #2 \\
+      	\textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-7pt}
 }
 
+% edit formatting for resume sub points
 \newcommand{\resumeSubSubheading}[2]{
     \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
+  \begin{tabular*}{0.95\textwidth}{>{\raggedright\arraybackslash}p{0.72\textwidth}@{\extracolsep{\fill}}>{\raggedleft\arraybackslash}p{0.23\textwidth}}
+      	\textit{\small#1} & \textit{\small #2} \\
     \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
     \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+  \begin{tabular*}{0.95\textwidth}{>{\raggedright\arraybackslash}p{0.72\textwidth}@{\extracolsep{\fill}}>{\raggedleft\arraybackslash}p{0.23\textwidth}}
       \small#1 & #2 \\
     \end{tabular*}\vspace{-7pt}
 }
@@ -104,6 +106,7 @@
 
 
 \begin{document}
+\sloppy
 
 %----------HEADING----------
 % \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
@@ -112,7 +115,7 @@
 % \end{tabular*}
 
 \begin{center}
-    \textbf{\Huge \scshape Ahnaf Shahriar} \\ \vspace{1pt}
+  {\Huge\scshape Ahnaf Shahriar} \\ \vspace{1pt}
     \small \href{mailto:ahnaf.shahriar@uwaterloo.ca}{\underline{Email}} $|$
     \href{https://linkedin.com/in/ahnaf-s}{\underline{LinkedIn}} $|$
     \href{https://github.com/shahriarAhnaf}{\underline{Github}}
@@ -146,13 +149,23 @@
 %     \resumeItem{\textbf{Optimization}: Implementing bytecode storage on NUllness checker for EISOP framework.}
 %   \resumeItemListEnd
 
+  % \resumeSubheading
+  % {Undergraduate Research Assistant}{May. 2025 -- Present}
+  % {Wireless Sensors and Devices Lab}{Waterloo, ON}
+  % \resumeItemListStart
+  %    \resumeItem{\textbf{BLE development}: Designing and firmware for \textit{Extended Advertisement} for ultra low power mesh networks}
+  %    \resumeItem{\textbf{Wireless Gateway}: Implementing 5G provisioning for gateway devices with Satellite connectivity. }
+  % \resumeItemListEnd
   \resumeSubheading
-  {Undergraduate Research Assistant}{May. 2025 -- Present}
-  {Wireless Sensors and Devices Lab}{Waterloo, ON}
+  {Autopilot AI HW Engineer (Post-Silicon Validation)}{Aug. 2025 -- Dec. 2025}
+  {Tesla}{Palo Alto, CA}
   \resumeItemListStart
-     \resumeItem{\textbf{BLE development}: Designing and firmware for \textit{Extended Advertisement} for ultra low power mesh networks}
-     \resumeItem{\textbf{Wireless Gateway}: Implementing 5G provisioning for gateway devices with Satellite connectivity. }
+  \resumeItem{\textbf{Hardware-to-software bringup}: Led hardware-to-software bringup for Autopilot AI accelerators using FPGA prototypes and virtual platforms to enable early driver and firmware integration before mass silicon roll-out.}
+  \resumeItem{\textbf{Emulation \& debug}: Built and maintained Python tools workflows (virtual platforms and FPGA in the loop), and developed JTAG and trace capture pipelines to enable root-cause analysis.}
+    \resumeItem{\textbf{Post-silicon validation}: Designed and ran automated validation suites and regression harnesses that exercised AI inferencing datapaths and caught corner-case bugs during bringup.}
+    \resumeItem{\textbf{Performance \& power characterization}: Profiled end-to-end software stacks, identified microarchitectural issues, and implemented workarounds to stabilize performance and power during early bringup.}
   \resumeItemListEnd
+  
   \resumeSubheading
   {Wireless Firmware Developer}{Jan. 2025 -- Apr. 2025}
   {ON Semiconductor Corporation}{Waterloo, ON}
@@ -164,23 +177,24 @@
      \resumeItem{\textbf{Test Automation}: Automated SDK release test cases, reducing testing time by up to \emph{80\%} for samples}
   \resumeItemListEnd
 
-  \resumeSubheading
-  {IC Design and Verification Intern}{May 2023 -- Aug. 2023, Jan. 2024 -- May 2024}
-  {NXP Semiconductors Canada}{Kanata, ON}
-  \resumeItemListStart
-  \resumeItem{\textbf{IP Design}: Designed multiple IP blocks including \textit{proprietery ECC IP} for dataplane processing chips.}
-  \resumeItem{\textbf{Timing Analysis}: Utilized \emph{Synopsys Design Compiler} and improved Parsing IP Clock Frequency by \emph{20\%}.}
-  \resumeItem{\textbf{Functional Testing}: Designed SystemVerilog End-to-End functional tests in simulating \emph{10GBps+} traffic for IP.}
-%   \resumeItemListEnd
-% \resumeSubheading
-%   {IC Verification Intern}{}
+% no need for IP design for a embedded role anymore.... :(
+%   \resumeSubheading
+%   {IC Design and Verification Intern}{May 2023 -- Aug. 2023, Jan. 2024 -- May 2024}
 %   {NXP Semiconductors Canada}{Kanata, ON}
-  % \resumeItemListStart
-  % \resumeItem{\textbf{UVM SystemVerilog}: Designed Multi-threaded IP specific \emph{UVM classes} for testing RTL Design.}
-  \resumeItem{\textbf{Unit Test Planning}: Created Simulation scenarios for testing High speed Dataplane Processing features.}
-  % \resumeItem{\textbf{Debugging}: Debugging regression testing and development in \emph{Red Hat Linux}.}
-  % \resumeItem{\textbf{Workflows}: Set up documentation and tested {Git} for Secure Linux Development Environment.}
-  \resumeItemListEnd
+%   \resumeItemListStart
+%   \resumeItem{\textbf{IP Design}: Designed multiple IP blocks including \textit{proprietery ECC IP} for dataplane processing chips.}
+%   \resumeItem{\textbf{Timing Analysis}: Utilized \emph{Synopsys Design Compiler} and improved Parsing IP Clock Frequency by \emph{20\%}.}
+%   \resumeItem{\textbf{Functional Testing}: Designed SystemVerilog End-to-End functional tests in simulating \emph{10GBps+} traffic for IP.}
+% %   \resumeItemListEnd
+% % \resumeSubheading
+% %   {IC Verification Intern}{}
+% %   {NXP Semiconductors Canada}{Kanata, ON}
+%   % \resumeItemListStart
+%   % \resumeItem{\textbf{UVM SystemVerilog}: Designed Multi-threaded IP specific \emph{UVM classes} for testing RTL Design.}
+%   \resumeItem{\textbf{Unit Test Planning}: Created Simulation scenarios for testing High speed Dataplane Processing features.}
+%   % \resumeItem{\textbf{Debugging}: Debugging regression testing and development in \emph{Red Hat Linux}.}
+%   % \resumeItem{\textbf{Workflows}: Set up documentation and tested {Git} for Secure Linux Development Environment.}
+%   \resumeItemListEnd
 
     %-------break-----------------
     \resumeSubheading
