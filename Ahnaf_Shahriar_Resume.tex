@@ -38,7 +38,7 @@
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
-\setlength{\footskip}{12pt}
+\setlength{\footskip}{11pt}
 
 % Adjust margins
 \addtolength{\oddsidemargin}{-0.5in}
@@ -80,14 +80,14 @@
 % edit formatting for resume sub points
 \newcommand{\resumeSubSubheading}[2]{
     \item
-  \begin{tabular*}{0.95\textwidth}{>{\raggedright\arraybackslash}p{0.72\textwidth}@{\extracolsep{\fill}}>{\raggedleft\arraybackslash}p{0.23\textwidth}}
-      	\textit{\small#1} & \textit{\small #2} \\
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
     \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
     \item
-  \begin{tabular*}{0.95\textwidth}{>{\raggedright\arraybackslash}p{0.72\textwidth}@{\extracolsep{\fill}}>{\raggedleft\arraybackslash}p{0.23\textwidth}}
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & #2 \\
     \end{tabular*}\vspace{-7pt}
 }
@@ -157,13 +157,13 @@
   %    \resumeItem{\textbf{Wireless Gateway}: Implementing 5G provisioning for gateway devices with Satellite connectivity. }
   % \resumeItemListEnd
   \resumeSubheading
-  {Autopilot AI HW Engineer (Post-Silicon Validation)}{Aug. 2025 -- Dec. 2025}
+  {Autopilot HW Engineering Intern}{Aug. 2025 -- Dec. 2025}
   {Tesla}{Palo Alto, CA}
   \resumeItemListStart
-  \resumeItem{\textbf{Hardware-to-software bringup}: Led hardware-to-software bringup for Autopilot AI accelerators using FPGA prototypes and virtual platforms to enable early driver and firmware integration before mass silicon roll-out.}
-  \resumeItem{\textbf{Emulation \& debug}: Built and maintained Python tools workflows (virtual platforms and FPGA in the loop), and developed JTAG and trace capture pipelines to enable root-cause analysis.}
-    \resumeItem{\textbf{Post-silicon validation}: Designed and ran automated validation suites and regression harnesses that exercised AI inferencing datapaths and caught corner-case bugs during bringup.}
-    \resumeItem{\textbf{Performance \& power characterization}: Profiled end-to-end software stacks, identified microarchitectural issues, and implemented workarounds to stabilize performance and power during early bringup.}
+  \resumeItem{\textbf{Emulation bringup}: Led GPU bringup in \emph{ZeBu} emulation with \emph{Zephyr ZTest} for firmware integration testing}
+  \resumeItem{\textbf{Rust Development}: Built and maintained Rust tools for JTAG debugging to enable root-cause analysis on custom silicon.}
+    \resumeItem{\textbf{Post-silicon validation}: Designed automated validation suites and regression harnesses that exercised \emph{PCIe Gen.6} testing AI inferencing datapaths} % NEED METRICS....
+    \resumeItem{\textbf{Performance \& power characterization}: Profiled end-to-end GPU workloads and implemented tests to characterize performance and power during early bringup.} % NEED METRICS....
   \resumeItemListEnd
   
   \resumeSubheading
